@@ -1,9 +1,16 @@
-Machine Learning Tasks
 Overview
-This repository contains two machine learning projects demonstrating the complete workflow of data preprocessing, model training, and performance evaluation. The tasks included are:
+
+This repository contains four machine learning projects demonstrating complete workflows of data preprocessing, feature engineering, model training, and evaluation. These tasks cover practical applications in text classification, image recognition, regression, and multi-class classification.
+
+The tasks included are:
+
 Email Spam Classification – classifying emails as spam or not spam using text data.
+
 MNIST Digit Recognition – recognizing and classifying handwritten digits from 0 to 9 using image data.
-Both projects showcase practical applications of machine learning for text classification and image recognition.
+
+Housing Price Prediction – predicting house prices based on features like location, number of rooms, and population.
+
+Iris Flower Classification – classifying iris flowers into species based on sepal and petal measurements.
 
 Task 1: Email Spam Classification
 
@@ -12,25 +19,13 @@ Build a machine learning model to classify emails as spam or not spam using a la
 
 Workflow:
 
-Data Preprocessing
+Data Preprocessing: Cleaned and normalized raw email text; removed unnecessary characters, punctuation, and stopwords.
 
-Cleaned and normalized raw email text.
+Feature Extraction: Converted text into numerical features using vectorization techniques.
 
-Removed unnecessary characters, punctuation, and stopwords.
+Model Training: Trained a supervised learning model (e.g., Naive Bayes or Logistic Regression) on the processed dataset.
 
-Feature Extraction
-
-Converted text into numerical features using vectorization techniques.
-
-Model Training
-
-Trained a supervised learning model (e.g., Naive Bayes or Logistic Regression) on the processed dataset.
-
-Evaluation
-
-Evaluated the model using accuracy, precision, recall, and confusion matrix.
-
-Achieved strong performance in detecting spam emails.
+Evaluation: Evaluated the model using accuracy, precision, recall, and confusion matrix.
 
 Files included:
 
@@ -43,31 +38,50 @@ Build a machine learning model to recognize and classify handwritten digits (0�
 
 Workflow:
 
-Data Loading & Preprocessing
+Data Loading & Preprocessing: Loaded MNIST images in IDX format; normalized pixel values and reshaped images into feature vectors.
 
-Loaded MNIST images in IDX format.
+Model Training: Trained a Logistic Regression model to classify digits.
 
-Normalized pixel values and reshaped images into feature vectors for the model.
-
-Model Training
-
-Trained a Logistic Regression model to classify digits.
-
-Evaluation
-
-Measured performance using accuracy, classification report, and confusion matrix.
-
-Visualized sample predictions to validate the model.
+Evaluation: Measured performance using accuracy, classification report, and confusion matrix; visualized sample predictions.
 
 Files included:
 
 mnist_digit_recognition.ipynb – complete code for preprocessing, training, evaluation, and visualization.
-machine-learning-tasks/
-│
-├── spam_classification.ipynb
-├── mnist_digit_recognition.ipynb
-├── README.md
-└── .gitignore
-├── mnist_digit_recognition.ipynb
-├── README.md
-└── .gitignore
+
+Task 3: Housing Price Prediction
+
+Objective:
+Build a machine learning model to predict house prices based on features like location, number of rooms, population, and other housing data.
+
+Workflow:
+
+Data Preprocessing: Handled missing values, encoded categorical variables, and scaled numeric features.
+
+Feature Selection: Selected relevant features for prediction.
+
+Model Training: Trained Linear Regression and Random Forest Regressor models.
+
+Evaluation: Evaluated models using MAE, RMSE, and R² score; visualized feature importance.
+
+Prediction: Made predictions on new sample houses.
+
+Files included:
+
+housing_price_prediction.ipynb – complete code for preprocessing, training, evaluation, and prediction.
+
+Task 4: Iris Flower Classification
+
+Objective:
+Classify iris flowers into species (Setosa, Versicolor, Virginica) based on sepal and petal measurements.
+
+Workflow:
+
+Data Preprocessing: Loaded the Iris dataset, handled missing values, and scaled features.
+
+Model Training: Trained supervised learning models such as Logistic Regression or Random Forest.
+
+Evaluation: Evaluated performance using accuracy, classification report, and confusion matrix; visualized decision boundaries and predictions.
+
+Files included:
+
+iris_flower_classification.ipynb – complete code for preprocessing, training, evaluation, and visualization.
